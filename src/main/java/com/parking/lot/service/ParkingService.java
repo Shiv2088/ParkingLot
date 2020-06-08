@@ -1,28 +1,18 @@
-package com.parking.lot;
+package com.parking.lot.service;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
-public class ParkingApplication {
+import com.parking.lot.entity.Car;
+import com.parking.lot.entity.ParkingSlot;
+
+public class ParkingService {
+
 	private static ParkingSlot parkingSlot[];
 	private static int chargedAmt;
 	private static int parkingSize;
 
-	public static void main(String[] args) {
-
-		BufferedReader reader;
-		try {
-			reader = new BufferedReader(new FileReader("C:\\Users\\ADMIN\\Documents\\parking_lot file_inputs.txt"));
-			String line = reader.readLine();
-			startParking(reader, line);
-			reader.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	private static void startParking(BufferedReader reader, String line) throws IOException {
+	public static void startParking(BufferedReader reader, String line) throws IOException {
 		while (line != null) {
 			if (line.startsWith("create")) {
 				createParkingSlot(line);

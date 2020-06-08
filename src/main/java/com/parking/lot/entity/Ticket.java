@@ -1,4 +1,4 @@
-package com.parking.lot;
+package com.parking.lot.entity;
 
 import java.util.Date;
 

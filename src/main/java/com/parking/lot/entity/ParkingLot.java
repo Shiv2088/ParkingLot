@@ -1,4 +1,4 @@
-package com.parking.lot;
+package com.parking.lot.entity;
 
 public class ParkingLot {
 	private int id;

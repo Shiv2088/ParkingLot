@@ -2,6 +2,8 @@ package com.parking.lot;
 
 import org.junit.Test;
 
+import com.parking.lot.application.ParkingApplication;
+
 public class ParkingApplicationTest {
 
 	ParkingApplication ParkingApp;
